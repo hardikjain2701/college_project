@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Rover</title>
+    
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <img src="nissan9.jpeg" alt="Land Rover Logo" class="logo">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Model</h2>
+            <h2>Contact</h2>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <section class="cc1">
+                <div class="image-container">
+                    <img src="nissan7.jpg" alt="Land Rover" class="image">
+                </div>
+                <div class="content">
+                    <h3>Introduction to Land Rover</h3>
+                    <p>Nissan gtr is a British luxury vehicle brand known for its rugged off-road capabilities combined
+                        with premium features. From its origins in 1948, it has become synonymous with adventure,
+                        durability, and high performance. Whether you're an off-road enthusiast or a luxury car
+                        aficionado, Land Rover offers vehicles designed to take on both the urban jungle and the
+                        roughest terrains.</p>
+                </div>
+            </section>
+
+            <section class="cc1">
+                <div class="image-container">
+                    <img src="nissan5.jpg" alt="Land Rover" class="image">
+                </div>
+                <div class="content">
+                    <h3>History of Land Rover</h3>
+                    <p>The history of Land Rover begins in 1948, with the introduction of the first Land Rover Series I.
+                        The brand quickly established itself as a reliable vehicle for military use and exploration.
+                        Over the years, models like the Series II, Range Rover, and Defender have emerged, each offering
+                        unique features that made them beloved worldwide</p>
+                </div>
+            </section>
+
+            <section class="cc1">
+                <div class="image-container">
+                    <img src="nissan3.jpeg" alt="Land Rover" class="image">
+                </div>
+                <div class="content">
+                    <h3>Technology & Innovation in Land Rover</h3>
+                    <p>
+                        Land Rover continues to innovate with technologies such as Terrain Response, Adaptive Dynamics,
+                        and the latest infotainment systems. Whether it's conquering the most challenging landscapes or
+                        providing a luxurious and comfortable ride, Land Rover uses advanced technology to enhance both
+                        performance and convenience.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-image: url('b.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+
+    header {
+        margin: 10px 0;
+    }
+
+    #nav {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border-radius: 25px;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .logo {
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #nav h2 {
+        color: #ddd;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #nav h2:hover {
+        color: #f4a261;
+        text-decoration: underline;
+    }
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .cc1 {
+        background-color: rgba(246, 118, 28, 0.9);
+        width: 30%;
+        margin: 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .cc1:hover {
+        transform: translateY(-50px);
+    }
+
+    .image-container {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover .image {
+        transform: scale(1.05);
+    }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .content p {
+        line-height: 1.6;
+        font-size: 16px;
+        color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+        #nav {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .cc1 {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        .content h3 {
+            font-size: 22px;
+        }
+
+        .content p {
+            font-size: 14px;
+        }
+    }
+</style>
+
+</html>
